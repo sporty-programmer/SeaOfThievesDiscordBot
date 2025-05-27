@@ -16,8 +16,8 @@ chdir(cwd := path.dirname(path.realpath(__file__))) # set cwd
 
 
 # LOAD SETTINGS
-discord_bot_token: str = dotenv_values("discord.env")["BOT_TOKEN"]
-sot_cache_path: str = f"{cwd}/sot.cache"
+discord_bot_token: str = dotenv_values(f"{cwd}/data/discord/.env")["BOT_TOKEN"]
+sot_cache_path: str = f"{cwd}/data/sea_of_thieves/.cache"
 bot_listening_mark: str = "!"
 
 
